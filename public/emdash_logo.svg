@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="16px" viewBox="0 0 130 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-26.000000, -314.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(26.000000, 314.000000)">
+                <g id="em-dash" transform="translate(31.000000, 0.000000)" fill="#4A4A4A" font-family="AGaramondPro-Regular, Adobe Garamond Pro" font-size="16" font-weight="normal">
+                    <text id="E">
+                        <tspan x="0" y="12">E</tspan>
+                    </text>
+                    <text id="M">
+                        <tspan x="15.1306667" y="12">M</tspan>
+                    </text>
+                    <text id="D">
+                        <tspan x="41.4826667" y="12">D</tspan>
+                    </text>
+                    <text id="A">
+                        <tspan x="57.829333" y="12">A</tspan>
+                    </text>
+                    <text id="S">
+                        <tspan x="72.517333" y="12">S</tspan>
+                    </text>
+                    <text id="H">
+                        <tspan x="85.274667" y="12">H</tspan>
+                    </text>
+                </g>
+                <g id="icon_inspiration" fill="#383838">
+                    <circle id="Oval" cx="1" cy="1" r="1"></circle>
+                    <circle id="Oval-Copy-3" cx="8" cy="1" r="1"></circle>
+                    <circle id="Oval-Copy-6" cx="15" cy="1" r="1"></circle>
+                    <circle id="Oval-Copy" cx="1" cy="8" r="1"></circle>
+                    <circle id="Oval-Copy-4" cx="8" cy="8" r="1"></circle>
+                    <circle id="Oval-Copy-7" cx="15" cy="8" r="1"></circle>
+                    <circle id="Oval-Copy-2" cx="1" cy="15" r="1"></circle>
+                    <circle id="Oval-Copy-5" cx="8" cy="15" r="1"></circle>
+                    <circle id="Oval-Copy-8" cx="15" cy="15" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

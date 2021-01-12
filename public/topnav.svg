@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1025px" height="53px" viewBox="0 0 1025 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>top nav</title>
+    <g id="Full-Bleed---Grid-(24px-margin)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="EM_HP_desk_1024px-HOME" transform="translate(0.000000, -31.000000)">
+            <g id="top-nav" transform="translate(0.000000, 31.000000)">
+                <text id="contact" font-family="AGaramondPro-Regular, Adobe Garamond Pro" font-size="14" font-weight="normal" line-spacing="16" letter-spacing="1.91333333" fill="#4A4A4A">
+                    <tspan x="856" y="10">contact</tspan>
+                </text>
+                <text id="em-dash" font-family="AGaramondPro-Regular, Adobe Garamond Pro" font-size="16" font-weight="normal" line-spacing="16" letter-spacing="5.78666667" fill="#4A4A4A">
+                    <tspan x="57" y="13">E</tspan>
+                    <tspan x="72.1306667" y="13" letter-spacing="11.76">M</tspan>
+                    <tspan x="98.4826667" y="13" letter-spacing="3.86666667">D</tspan>
+                    <tspan x="114.829333" y="13" letter-spacing="4.72">A</tspan>
+                    <tspan x="129.517333" y="13" letter-spacing="4.93333333">S</tspan>
+                    <tspan x="142.274667" y="13">H</tspan>
+                </text>
+                <g id="icon_inspiration" transform="translate(26.000000, 1.000000)" fill="#383838">
+                    <circle id="Oval" cx="1" cy="1" r="1"></circle>
+                    <circle id="Oval-Copy-3" cx="8" cy="1" r="1"></circle>
+                    <circle id="Oval-Copy-6" cx="15" cy="1" r="1"></circle>
+                    <circle id="Oval-Copy" cx="1" cy="8" r="1"></circle>
+                    <circle id="Oval-Copy-4" cx="8" cy="8" r="1"></circle>
+                    <circle id="Oval-Copy-7" cx="15" cy="8" r="1"></circle>
+                    <circle id="Oval-Copy-2" cx="1" cy="15" r="1"></circle>
+                    <circle id="Oval-Copy-5" cx="8" cy="15" r="1"></circle>
+                    <circle id="Oval-Copy-8" cx="15" cy="15" r="1"></circle>
+                </g>
+                <line x1="960.5" y1="3.5" x2="976.5" y2="3.5" id="Line-2" stroke="#707070" stroke-linecap="square"></line>
+                <line x1="960.5" y1="15.5" x2="976.5" y2="15.5" id="Line-2-Copy-2" stroke="#707070" stroke-linecap="square"></line>
+                <line x1="960.5" y1="9.5" x2="976.5" y2="9.5" id="Line-2-Copy-3" stroke="#707070" stroke-linecap="square"></line>
+                <line x1="0.5" y1="52.5" x2="1024.5" y2="52.5" id="Line-3" stroke="#979797" stroke-linecap="square"></line>
+            </g>
+        </g>
+    </g>
+</svg>
