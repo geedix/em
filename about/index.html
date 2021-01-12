@@ -72,51 +72,8 @@
             </ul>
         </div>
     </div>
-    <header>
-    <div id="topbar">
-        <div class="topnav">
-            <a href="/"> <img src="../images/emdash_logo.svg" alt="emdash" id='logo'></a>
-            <ul class="navmenu">
-                <li id="home"><a href="/">home</a></li>
-                <li id="about"><a href="/about/">about</a></li>
-                <li id="contact"><a href="/contact/">contact</a></li>
-                
-            </ul>
-    
-            <div class="hamburger" onclick="toggleburger();">
-                <div class="openlines">
-                        <img src="../images/hamburger.svg" alt="burger">
-                </div>
-                <div class="closex">
-                    <img src="../images/close.svg" alt="close">
-                </div>
-            </div>
-        </div>
-  </header>
-  <script>
-    let burgOpen= true;
-    function toggleburger(){
-        if(burgOpen){
-            burgOpen=false;
-            gsap.to(".openlines", {opacity:0, duration: .22});
-            gsap.to(".closex", {opacity:1, duration: .22});
-
-            gsap.to(".navmenu", {opacity:1, right:120, duration:.22});
-        }
-        else{
-            burgOpen=true;
-            gsap.to(".openlines", {opacity:1, duration: .22});
-            gsap.to(".closex", {opacity:0, duration:.22});
-
-            gsap.to(".navmenu", {opacity:0, right:80, duration: .22});
-           
-        }
-    }
-</script>
-    <footer>
-    <!-- <p>© 2021 This would be the footer. Still is. </p> -->
-    <img src="../images/staticfooter2x.png" alt="footer">
-</footer>
+    <sergey-import src="header" />
+    <sergey-import src="footer" />
 
 
 </body>
