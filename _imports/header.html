@@ -1,7 +1,7 @@
 <header>
     <div id="topbar">
         <div class="topnav">
-            <img src="emdash_logo.svg" alt="emdash" id='logo'>
+            <img src="images/emdash_logo.svg" alt="emdash" id='logo'>
             <ul class="navmenu">
                 <li id="home"><a href="/">home</a></li>
                 <li id="about"><a href="about.html">about</a></li>
@@ -11,11 +11,31 @@
     
             <div class="hamburger" onclick="toggleburger();">
                 <div class="openlines">
-                        <img src="hamburger.svg" alt="burger">
+                        <img src="images/hamburger.svg" alt="burger">
                 </div>
                 <div class="closex">
-                    <img src="close.svg" alt="close">
+                    <img src="images/close.svg" alt="close">
                 </div>
             </div>
         </div>
   </header>
+  <script>
+    let burgOpen= true;
+    function toggleburger(){
+        if(burgOpen){
+            burgOpen=false;
+            gsap.to(".openlines", {opacity:0, duration: .22});
+            gsap.to(".closex", {opacity:1, duration: .22});
+
+            gsap.to(".navmenu", {opacity:1, right:120, duration:.22});
+        }
+        else{
+            burgOpen=true;
+            gsap.to(".openlines", {opacity:1, duration: .22});
+            gsap.to(".closex", {opacity:0, duration:.22});
+
+            gsap.to(".navmenu", {opacity:0, right:80, duration: .22});
+           
+        }
+    }
+</script>
