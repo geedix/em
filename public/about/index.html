@@ -47,7 +47,7 @@
             <ul>
                 <li>WILLIAMS-SONOMA</li>
                 <li>RESTORATION HARDWARE</li>
-                <li>THE WALT DISNEY FAMILY MUSEUM</li>
+                <li>THE WALT DISNEY FAMILY MUSEUM</li>
 
                 <li>BANANA REPUBLIC</li>
                 <li>HALLMARK</li>
@@ -117,8 +117,8 @@
     const CurrentUrl = window.location.href.toString();
 
     if (CurrentUrl.indexOf("/about") > -1) {
-        aboutbtn.style.textDecoration = 'underline';
-        aboutbtn.firstElementChild.style.color = '#999';
+        // aboutbtn.style.textDecoration = 'underline';
+        aboutbtn.firstElementChild.style.color = '#979797';
         gsap.set(".navmenu", {opacity:1, right:84});
         gsap.set(".openlines", {opacity:0});
         gsap.set(".closex", {opacity:1});
@@ -127,8 +127,8 @@
         // toggleburger();
     }
     else if (CurrentUrl.indexOf("/contact") > -1) {
-        contactbtn.style.textDecoration = 'underline';
-        contactbtn.firstElementChild.style.color = '#999';
+        // contactbtn.style.textDecoration = 'underline';
+        contactbtn.firstElementChild.style.color = '#979797';
         // toggleburger();
         gsap.set(".navmenu", {opacity:1, right:84});
         gsap.set(".openlines", {opacity:0});
@@ -136,8 +136,8 @@
         burgOpen=false;
     }
     else{
-        homebtn.style.textDecoration = 'underline';
-        homebtn.firstElementChild.style.color = '#999';
+        // homebtn.style.textDecoration = 'underline';
+        homebtn.firstElementChild.style.color = '#979797';
     }
 
 </script>

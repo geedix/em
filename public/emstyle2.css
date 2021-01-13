@@ -96,8 +96,8 @@ a {
   color: var(--textgray);
 }
 a:hover {
-  text-decoration: underline;
-  color: var(--textgray);
+  /* text-decoration: underline; */
+  color: var(--palergray);
 }
 .wrap{
     position: absolute;
