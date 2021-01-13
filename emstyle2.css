@@ -4,6 +4,7 @@ body {
   --palecool: #f1f8ff;
   --textgray: #4a4a4a;
   --palergray: #979797;
+  --darkblue: #2E3448;
   --maxwidth: 1200px;
   font-family: "EB Garamond", serif;
   font-weight: normal;
@@ -177,6 +178,44 @@ a:hover {
   justify-content: space-between;
 }
 
+footer{
+  background-color: var(--darkblue);
+  color:#fff;
+  width:100%;
+  min-height:280px;
+  /* display: grid; */
+  text-align: center;
+  align-items: center;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 33px;
+  font-style: italic;
+  font-weight:100;
+  color: #fff;
+}
+.bottomtext {
+  display: inline-flex;
+  width: 100%;
+  /* border: 2px dashed lime; */
+  justify-content: space-around;
+  align-self: flex-end;
+  font-size: 12px;
+}
+
+.thanks{
+  width:100%;
+}
+
+.thanks img {
+  max-width: 350px;
+  width: 33%;
+}
 
 
 
@@ -192,12 +231,7 @@ a:hover {
 
 
 
-
-
-
-
-
-
+/* ----------   smaller screens   ----------     */
 
 
 @media (max-width:1208px) {
