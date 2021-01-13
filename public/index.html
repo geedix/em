@@ -109,6 +109,9 @@
         aboutbtn.style.textDecoration = 'underline';
         aboutbtn.firstElementChild.style.color = '#999';
         gsap.set(".navmenu", {opacity:1, right:84});
+        gsap.set(".openlines", {opacity:0});
+        gsap.set(".closex", {opacity:1});
+        burgOpen=false;
 
         // toggleburger();
     }
@@ -117,6 +120,9 @@
         contactbtn.firstElementChild.style.color = '#999';
         // toggleburger();
         gsap.set(".navmenu", {opacity:1, right:84});
+        gsap.set(".openlines", {opacity:0});
+        gsap.set(".closex", {opacity:1});
+        burgOpen=false;
     }
     else{
         homebtn.style.textDecoration = 'underline';
