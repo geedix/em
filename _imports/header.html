@@ -26,16 +26,35 @@
             burgOpen=false;
             gsap.to(".openlines", {opacity:0, duration: .22});
             gsap.to(".closex", {opacity:1, duration: .22});
-
-            gsap.to(".navmenu", {opacity:1, right:120, duration:.22});
+            gsap.to(".navmenu", {opacity:1, right:84, duration:.22});
         }
         else{
             burgOpen=true;
             gsap.to(".openlines", {opacity:1, duration: .22});
             gsap.to(".closex", {opacity:0, duration:.22});
-
-            gsap.to(".navmenu", {opacity:0, right:80, duration: .22});
-           
+            gsap.to(".navmenu", {opacity:0, right:30, duration: .22});
         }
     }
+
+    let homebtn = document.getElementById('home');
+    let aboutbtn = document.getElementById('about');
+    let contactbtn = document.getElementById('contact');
+    
+    const CurrentUrl = window.location.href.toString();
+
+    if (CurrentUrl.indexOf("/about") > -1) {
+        aboutbtn.style.textDecoration = 'underline';
+        aboutbtn.firstElementChild.style.color = '#999';
+        toggleburger();
+    }
+    else if (CurrentUrl.indexOf("/contact") > -1) {
+        contactbtn.style.textDecoration = 'underline';
+        contactbtn.firstElementChild.style.color = '#999';
+        toggleburger();
+    }
+    else{
+        homebtn.style.textDecoration = 'underline';
+        homebtn.firstElementChild.style.color = '#999';
+    }
+
 </script>
