@@ -135,7 +135,7 @@ a:hover {
   width:44%;
   height:auto;
   display: block;
-  padding: 30px 8%;
+  padding: 50px 8%;
 }
 #frank{
   width:25%;
@@ -170,7 +170,12 @@ a:hover {
 .navmenu li {
   transform: translate(-24px,0);
 }
-
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 
 

@@ -21,7 +21,7 @@
 
 <body>
 
-
+    <div class="wrapper">
     
     <div class="main">
 
@@ -119,12 +119,15 @@
     if (CurrentUrl.indexOf("/about") > -1) {
         aboutbtn.style.textDecoration = 'underline';
         aboutbtn.firstElementChild.style.color = '#999';
-        toggleburger();
+        gsap.set(".navmenu", {opacity:1, right:84});
+
+        // toggleburger();
     }
     else if (CurrentUrl.indexOf("/contact") > -1) {
         contactbtn.style.textDecoration = 'underline';
         contactbtn.firstElementChild.style.color = '#999';
-        toggleburger();
+        // toggleburger();
+        gsap.set(".navmenu", {opacity:1, right:84});
     }
     else{
         homebtn.style.textDecoration = 'underline';
@@ -136,7 +139,7 @@
     <!-- <p>© 2021 This would be the footer. Still is. </p> -->
     <img src="../images/staticfooter2x.png" alt="footer">
 </footer>
-
+</div>
 
 </body>
 
