@@ -10,7 +10,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
 
 </head>
 <body class='home' onload="doStuff()">
@@ -57,11 +56,19 @@
                     <img src="img2x/hp21.jpg" id="hp21" class="h2x" loading="lazy">
                     <img src="img2x/hp22.png" id="hp22" class="h2x" loading="lazy">
                     <img src="img2x/hp25.png" id="hp25" class="h2x" loading="lazy">
+
+                    
+
                     <img src="img2x/hp23.jpg" id="hp23" class="h2x" loading="lazy">
                     
                     <img src="img2x/hp24.png" id="hp24" class="h2x" loading="lazy">
+                    <img src="img2x/kqed_merged2x.png" id="hp24alt" class="h2x" loading="lazy">
+
                     
-                    
+                    <!-- <picture>
+                        <source srcset="large.jpg, extralarge.jpg 2x" media="(min-width: 800px)">
+                        <img srcset="small.jpg, medium.jpg 2x" alt="…">
+                      </picture> -->
                      <!-- <img src='images/homealone1x.jpg' alt='static layout' id="layout"> -->
             </div>
         </div>   
@@ -167,16 +174,16 @@
             }
             playVids();
 
-            gsap.set(".h2x", {y:"+=30"});
+            gsap.set(".h2x", {y:"+=32"});
 
             batch(".h2x", {
-                interval: 0.2, // time in seconds for batching to occur
+                interval: 0.2, // time for batching
                 batchMax: 3,   // maximum batch size (targets)
-                onEnter: batch => gsap.to(batch, {autoAlpha: 1, y:4, stagger: 0.2, overwrite: true}),
-                onLeave: batch => gsap.set(batch, {autoAlpha: 0, overwrite: true}),
-                onEnterBack: batch => gsap.to(batch, {autoAlpha: 1, stagger: 0.15, overwrite: true}),
-                // onLeaveBack: batch => gsap.set(batch, {autoAlpha: 0, overwrite: true}), 
-                start:"top 90%"
+                onEnter: batch => gsap.to(batch, {autoAlpha: 1, y:2, duration:0.8, ease: "power4.out", stagger: 0.2, overwrite: true}),
+                onLeave: batch => gsap.set(batch, {autoAlpha: 0, y:"-=20", overwrite: true}),
+                onEnterBack: batch => gsap.to(batch, {autoAlpha: 1, y:2, stagger: 0.15, overwrite: true}),
+                onLeaveBack: batch => gsap.set(batch, {autoAlpha: 0, y:"+=18", overwrite: true}), 
+                start:"top 96%"
             });
 
             // could be replaced with ScrollTrigger.batch())
