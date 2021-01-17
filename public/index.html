@@ -8,59 +8,65 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet"  />
     <link rel="stylesheet" href="/emstyle2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
 
 </head>
-<body>
-    
+<body class='home' onload="doStuff()">
+    <!-- <body> -->
     <div class="main">
         <main>
         
                 
-            
-
-            
-            
-               
                 
             
                 <div class="bigimg">
-                    <img src='images/homealone2x.jpg' alt='static layout'>
-            
-                </div>
-             </div>   
-            <!-- <script>
-                let burgOpen= true;
-                function toggleburger(){
-                    if(burgOpen){
-                        burgOpen=false;
-                        gsap.to(".openlines", {opacity:0, duration: .22});
-                        gsap.to(".closex", {opacity:1, duration: .22});
-            
-                        gsap.to(".navmenu", {opacity:1, right:120, duration:.22});
-                    }
-                    else{
-                        burgOpen=true;
-                        gsap.to(".openlines", {opacity:1, duration: .22});
-                        gsap.to(".closex", {opacity:0, duration:.22});
-            
-                        gsap.to(".navmenu", {opacity:0, right:80, duration: .22});
-                       
-                    }
-                }
-            </script> -->
+
+                    <img src="img2x/hp01.jpg" id="hp01" class="h2x" loading="lazy">
+                    <img src="img2x/hp02.jpg" id="hp02" class="h2x" loading="lazy">
+                    <img src="img2x/hp03.jpg" id="hp03" class="h2x" loading="lazy">
+                    <img src="img2x/hp04.jpg" id="hp04" class="h2x" loading="lazy">
+                    <img src="img2x/hp05.jpg" id="hp05" class="h2x" loading="lazy">
+                    <div class="vidwrap h2x">
+                        <video class="vid" id="vid1" muted loop src="video/sp18_b5b.mp4"></video>       
+                    </div>   
+                    <img src="img2x/hp07.jpg" id="hp07" class="h2x" loading="lazy">
+                    <img src="img2x/hp08.jpg" id="hp08" class="h2x" loading="lazy">
+                    <img src="img2x/hp09.png" id="hp09" class="h2x" loading="lazy">
+                    <img src="img2x/hp10.jpg" id="hp10" class="h2x" loading="lazy">
+                    <img src="img2x/hp11.jpg" id="hp11" class="h2x" loading="lazy">
+                        <div id="hp12" class="h2x">
+                            <hr>
+                            <p>
+                            dummy brand launch teaser box, <span>each card<br>
+                            describes</span> a special <span>attribute</span> of the<br>
+                            brand experience more <span>here</span> about more.       
+                        </p><hr>
+                            </div>
 
 
-
-
-
-
-
-
-
+                    <img src="img2x/hp13.jpg" id="hp13" class="h2x" loading="lazy">
+                    <img src="img2x/hp14.jpg" id="hp14" class="h2x" loading="lazy">
+                    <img src="img2x/hp15.jpg" id="hp15" class="h2x" loading="lazy">
+                    <img src="img2x/hp16.jpg" id="hp16" class="h2x" loading="lazy">
+                    <img src="img2x/hp17.jpg" id="hp17" class="h2x" loading="lazy">
+                    <img src="img2x/hp18.png" id="hp18" class="h2x" loading="lazy">
+                    <img src="img2x/hp19.jpg" id="hp19" class="h2x" loading="lazy">
+                    <img src="img2x/hp20.png" id="hp20" class="h2x" loading="lazy">
+                    <img src="img2x/hp21.jpg" id="hp21" class="h2x" loading="lazy">
+                    <img src="img2x/hp22.png" id="hp22" class="h2x" loading="lazy">
+                    <img src="img2x/hp25.png" id="hp25" class="h2x" loading="lazy">
+                    <img src="img2x/hp23.jpg" id="hp23" class="h2x" loading="lazy">
+                    
+                    <img src="img2x/hp24.png" id="hp24" class="h2x" loading="lazy">
+                    
+                    
+                     <!-- <img src='images/homealone1x.jpg' alt='static layout' id="layout"> -->
+            </div>
+        </div>   
     </main>
-
-    </div> 
+</div> 
 <header>
     <div id="topbar">
         <div class="topnav">
@@ -131,21 +137,76 @@
 
 </script>
     <footer>
-    <img src="../images/staticfooter2x.png" alt="footer">
+    <!-- <img src="../images/staticfooter2x.png" alt="footer"> -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet"> -->
-        
+
     <!-- <h5>thanks for stopping by.</h5> -->
-
-<!-- <div class="thanks">
-    <img src="../images/thanks_omg.svg" alt="" srcset="">
-</div>
-<div class="bottomtext">
-    <p>COPYRIGHT 2021</p>
-    <p>more information here about the site etc</p>
-</div> -->
-    
+    <div class="footbox">
+        <div class="thanks">
+            <img src="../images/thanks_omg.svg" alt="" srcset="">
+        </div>
+        
+    </div>
+    <div class="bottomtext">
+        <p>COPYRIGHT 2021</p>
+        <p>more information here about the site etc</p>
+    </div>
 </footer>
+    <script>
+        // document.onload = function(){
 
+        gsap.registerPlugin(ScrollTrigger);
+        function doStuff(){
+            console.log('loaded.');
+            // alert('fool');
+            let mc = function (id) { return document.getElementById(id) };
+            var video = document.getElementById('vid');
+
+            function playVids(){
+                mc('vid1').play();
+            }
+            playVids();
+
+            gsap.set(".h2x", {y:"+=30"});
+
+            batch(".h2x", {
+                interval: 0.2, // time in seconds for batching to occur
+                batchMax: 3,   // maximum batch size (targets)
+                onEnter: batch => gsap.to(batch, {autoAlpha: 1, y:4, stagger: 0.2, overwrite: true}),
+                onLeave: batch => gsap.set(batch, {autoAlpha: 0, overwrite: true}),
+                onEnterBack: batch => gsap.to(batch, {autoAlpha: 1, stagger: 0.15, overwrite: true}),
+                // onLeaveBack: batch => gsap.set(batch, {autoAlpha: 0, overwrite: true}), 
+                start:"top 90%"
+            });
+
+            // could be replaced with ScrollTrigger.batch())
+            function batch(targets, vars) {
+            let varsCopy = {},
+                interval = vars.interval || 0.15,
+                proxyCallback = (type, callback) => {
+                    let batch = [],
+                        delay = gsap.delayedCall(interval, () => {callback(batch); batch.length = 0;}).pause();
+                    return self => {
+                        batch.length || delay.restart(true);
+                        batch.push(self.trigger);
+                        vars.batchMax && vars.batchMax <= batch.length && delay.progress(1);
+                    };
+                },
+                p;
+            for (p in vars) {
+                varsCopy[p] = (~p.indexOf("Enter") || ~p.indexOf("Leave")) ? proxyCallback(p, vars[p]) : vars[p];
+            }
+            gsap.utils.toArray(targets).forEach(target => {
+                let config = {};
+                for (p in varsCopy) {
+                config[p] = varsCopy[p];
+                }
+                config.trigger = target;
+                ScrollTrigger.create(config);
+            });
+        }      
+    }
+    </script>
 
 </body>
 </html>

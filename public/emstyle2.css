@@ -5,7 +5,7 @@ body {
   --textgray: #4a4a4a;
   --palergray: #979797;
   --darkblue: #2E3448;
-  --maxwidth: 1200px;
+  --maxwidth: 1024px;
   font-family: "EB Garamond", serif;
   font-weight: normal;
   font-size: 16px;
@@ -16,7 +16,7 @@ body {
   text-align: center;
 }
 
-p span{
+.contact p span{
     font-size: 12px;
 }
 
@@ -26,6 +26,7 @@ p span{
   margin: 0 auto;
   max-width: var(--maxwidth);
   display: block;
+  position:relative;
   /* padding-top: 82px; */
 }
 img {
@@ -182,15 +183,23 @@ footer{
   background-color: var(--darkblue);
   color:#fff;
   width:100%;
-  min-height:280px;
-  /* display: grid; */
+  height:300px;
+  
   text-align: center;
   align-items: center;
-
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  /* position: absolute;
+    bottom: 0; left: 0; */
+    /* display:none; */
+
+    
+}
+.home footer{
+  top: 5281px;
+  position: absolute;
 }
 footer h5 {
   font-family: 'Cormorant Garamond', serif;
@@ -199,14 +208,22 @@ footer h5 {
   font-weight:100;
   color: #fff;
 }
+
 .bottomtext {
-  display: inline-flex;
   width: 100%;
-  /* border: 2px dashed lime; */
+  /* border: 1px dashed lime; */
+  font-size: 12px;
+  display: inline-flex;
   justify-content: space-around;
   align-self: flex-end;
-  font-size: 12px;
+  height: 20px;
+  position: absolute;
+  align-self: center;
+  align-items: baseline;
+  margin-top: 226px;
+  text-align: center;
 }
+
 
 .thanks{
   width:100%;
@@ -214,8 +231,208 @@ footer h5 {
 
 .thanks img {
   max-width: 350px;
+  min-width: 250px;
   width: 33%;
 }
+
+.vidwrap{
+  /* width: 697px;
+  max-width: 655px; */
+  display:block;
+  width:557px;
+  height:306px;
+  position: absolute;
+
+  top: 797px;
+  left: 441px;
+  overflow: hidden;
+}
+
+
+/* .vidwrap {
+  width: 38.5%;
+  max-width: 655px;
+  position: absolute;
+  top: 933px;
+  left: 45%;
+  position: absolute;
+
+} */
+
+
+
+
+/* also adding for vid:  */
+.main{
+  position:relative;
+  display:block;
+}
+
+video{
+  width: 100%;
+}
+
+.footbox{
+  width:100%;
+}
+.contact .footbox, .about .footbox{
+  display:none;
+}
+.contact footer, .about footer{
+  height:100px;
+}
+.contact .bottomtext, .about .bottomtext{
+  margin-top: -20px;
+}
+
+.h2x{
+  position:absolute;
+  height:auto;
+  opacity:0;
+}
+
+#hp01{
+  left: 18px;
+  top: 9px;
+  width:407px;
+  height:auto;
+}
+#hp02{
+  left: 438px;
+  top: 15px;
+  width: 292px;
+}
+#hp03{
+  left: 746px;
+  top: 18px;
+  width: 252px;
+}
+#hp04{
+  left: 19px;
+  top: 502px;
+  width: 407px;
+}
+#hp05{
+  left: 441px;
+  top: 394px;
+  width: 557px;
+}
+#hp07{
+  width: 407px;
+  left: 18px;
+  top: 1051px;
+}
+#hp08{
+  width: 363px;
+  top: 1124px;
+  left: 440px;
+}
+#hp09{
+  width: 192px;
+  left: 832px;
+  top: 1318px;
+}
+#hp10{
+  width: 455px;
+  left: 35px;
+  top: 1627px;
+}
+#hp11{
+  width: 477px;
+  top: 1599px;
+  left: 512px;
+}
+#hp12{
+  /* paragraph */
+  top: 2185px;
+  width: 100%;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: .08em;
+}
+#hp12 span{
+  font-style: italic;
+}
+#hp13{
+  width: 364px;
+  top: 2407px;
+  left: 81px;
+}
+#hp14{
+  width: 498px;
+  left: 500px;
+  top: 2388px;
+}
+#hp15{
+  width: 443px;
+  left: 42px;
+  top: 3057px;
+}
+#hp16{
+  width: 474px;
+  top: 3043px;
+  left: 512px;
+}
+#hp17{
+  width: 1074px;
+  top: 3605px;
+  left: -9px;
+}
+#hp18{
+  width: 405px;
+  top: 3977px;
+  left: 61px;
+}
+#hp19{
+  width: 469px;
+  top: 4014px;
+  left: 526px;
+}
+#hp20{
+  width: 325px;
+  top: 4318px;
+  left: 9px;
+}
+#hp21{
+  width: 474px;
+  top: 4407px;
+  left: 26px;
+}
+#hp22{
+  width: 180px;
+  top: 4809px;
+  left: 26px;
+}
+#hp23{
+  width: 360px;
+  top: 4809px;
+  left: 238px;
+}
+#hp24{
+  width: 367px;
+  top: 4809px;
+  left: 631px
+}
+#hp25{
+  width: 463px;
+  top: 4982px;
+  left: 569px;
+}
+
+#layout{
+  opacity:.22;
+  top: -85px;
+  position: absolute;
+  left: 0px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -242,6 +459,36 @@ footer h5 {
     width:52%;
     left:34%;
   }
+
+}
+@media (max-width:1020px) {
+
+  .h2x {
+    position: relative;
+    left: unset !important;
+    top: unset !important;
+    max-width: 93vw;
+    height: auto;
+    margin:5px;
+  }
+  .vidwrap{
+    display:none;
+  }
+  .home footer{
+    position: relative;
+    top:unset;
+  }
+  #hp12 {
+    font-size: 20px;
+  }
+  footer{
+    height: 200px;
+  }
+  .bottomtext {
+    margin-top: 120px;
+  }
+
+
 }
 
 @media (max-width:767px) {
