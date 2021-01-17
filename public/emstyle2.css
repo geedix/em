@@ -224,7 +224,6 @@ footer h5 {
   text-align: center;
 }
 
-
 .thanks{
   width:100%;
 }
@@ -240,26 +239,13 @@ footer h5 {
   max-width: 655px; */
   display:block;
   width:557px;
-  height:306px;
+  height: 306px !important;
   position: absolute;
 
   top: 797px;
   left: 441px;
   overflow: hidden;
 }
-
-
-/* .vidwrap {
-  width: 38.5%;
-  max-width: 655px;
-  position: absolute;
-  top: 933px;
-  left: 45%;
-  position: absolute;
-
-} */
-
-
 
 
 /* also adding for vid:  */
