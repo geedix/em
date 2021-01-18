@@ -183,8 +183,9 @@
                 onLeave: batch => gsap.set(batch, {autoAlpha: 0, y:"-=20", overwrite: true, start:"bottom"}),
                 onEnterBack: batch => gsap.to(batch, {autoAlpha: 1, y:2, stagger: 0.15, overwrite: true}),
                 onLeaveBack: batch => gsap.set(batch, {autoAlpha: 0, y:"+=18", overwrite: true}), 
-                start:"top 96%", 
-                end: "bottom -=432px"
+                start:"top 99%", 
+                // end: "bottom top"
+                end: "bottom -=440px"
             });
 
             // could be replaced with ScrollTrigger.batch())
