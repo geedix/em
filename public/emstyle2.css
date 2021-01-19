@@ -260,7 +260,9 @@ footer h5 {
 }
 
 video{
-  width: 100%;
+  width: 560px;
+  left: -1px;
+  position: relative;
 }
 
 .footbox{
