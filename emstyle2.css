@@ -27,7 +27,15 @@ body {
   max-width: var(--maxwidth);
   display: block;
   position:relative;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   /* padding-top: 82px; */
+}
+.contact .bigimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 img {
   width: 100%;
@@ -116,11 +124,9 @@ a:hover {
 }
 
 .contactText{
-    position: absolute;
-    display: block;
-    top: 130px;
-    left: 56%;
-    padding:6%;
+
+    display: flex;
+    flex-direction: column;
 }
 .aboutText{
   position: absolute;
@@ -438,8 +444,7 @@ video{
 
 
 
-
-/* ----------   smaller screens   ----------     */
+/* ----------   media queries   ----------     */
 
 
 @media (max-width:1208px) {
@@ -519,6 +524,13 @@ video{
     padding: 40px 0 0 0;
     margin: 0 auto;
   }
+
+  .contact .bigimg{
+    display: block;
+    position:relative;
+  }
+
+
   #logo{
     width: 100px;
     padding: 35px 24px;
