@@ -3,6 +3,8 @@ body {
   padding: 0;
   --palecool: #f1f8ff;
   --textgray: #4a4a4a;
+ 
+  --lightertext: #8F8E90;
   --palergray: #979797;
   --darkblue: #2E3448;
   --maxwidth: 1024px;
@@ -15,11 +17,32 @@ body {
   letter-spacing: 0.15em;
   text-align: center;
 }
+.layout{
+  opacity:.3;
+  width:1024px;
+  position:relative;
+  top:-85px;
+  pointer-events: none;
+  display: inline-block;
+}
 
+.nbigimg{
+  position: relative;
+  max-width: var(--maxwidth);
+  margin: 0 auto;
+}
 .contact p span{
     font-size: 12px;
 }
+p.glen {
+  font-size: 14px;
+  padding-top: 1em;
+}
+span.atsign{
+  font-size:15px !important;
+}
 
+/* bigimg is for centering the picture elements  */
 .bigimg {
   width: 100%;
   height: auto;
@@ -27,10 +50,6 @@ body {
   max-width: var(--maxwidth);
   display: block;
   position:relative;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  /* padding-top: 82px; */
 }
 .contact .bigimg{
   display: flex;
@@ -51,13 +70,13 @@ img {
   border-bottom: 1px solid var(--palergray);
 }
 #logo {
-  width: 130px;
+  width: 147px;
   height: 16px;
   display: block;
   position: relative;
-  left: 0;
-  top: 0;
-  padding: 32px 60px;
+  left: -4px;
+  top: -1px;
+  padding: 32px 27px;
 }
 .topnav {
   width: 100%;
@@ -66,18 +85,17 @@ img {
   display: block;
 }
 .hamburger {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  /* height: 40px; */
   position: absolute;
-  right: 50px;
-  top: 19px;
+  right: 41px;
+  top: 17px;
   cursor:pointer;
 }
-
 .openlines {
   position: absolute;
-  width: 60%;
-  height: auto;
+  /* width: 60%; */
+  /* height: auto; */
   top: 12px;
   left: 8px;
 }
@@ -85,12 +103,13 @@ img {
   position: absolute;
   width: 100%;
   height: auto;
+  top:5px;
   opacity: 0;
 }
 .navmenu {
   display: inline-flex;
   position: absolute;
-  top: 13px;
+  top: 14px;
   right: 30px;
   list-style: none;
   height: 20px;
@@ -124,9 +143,11 @@ a:hover {
 }
 
 .contactText{
-
     display: flex;
+    line-height: 1.78;
+    padding: 0 20%;
     flex-direction: column;
+    color: var(--textgray);
 }
 .aboutText{
   position: absolute;
@@ -141,9 +162,12 @@ a:hover {
 
 #contactimage{
   width:44%;
-  height:auto;
+  max-width: 317px;
+  height: auto;
   display: block;
-  padding: 50px 8%;
+  padding: 26px 10% 0 0;
+  position: relative;
+  left: 100px;
 }
 #frank{
   width:25%;
@@ -169,10 +193,6 @@ a:hover {
 
 .toprow{
   position: relative;
-}
-
-.main{
-  margin-top: 82px;
 }
 
 .navmenu li {
@@ -204,7 +224,7 @@ footer{
     
 }
 .home footer{
-  top: 5281px;
+  top: 5215px;
   position: absolute;
 }
 footer h5 {
@@ -217,7 +237,7 @@ footer h5 {
 
 .bottomtext {
   width: 95vw;
-  font-size: 12px;
+  font-size: 7px;
   display: inline-flex;
   justify-content: space-around;
   align-self: flex-end;
@@ -225,8 +245,13 @@ footer h5 {
   position: absolute;
   align-self: center;
   align-items: baseline;
-  margin-top: 226px;
+  margin-top: 240px;
   text-align: center;
+  opacity:.8;
+}
+.bottomtext span{
+  font-size:10px;
+  vertical-align: revert;
 }
 
 .thanks{
@@ -234,8 +259,8 @@ footer h5 {
 }
 
 .thanks img {
-  max-width: 350px;
-  min-width: 250px;
+  max-width: 386px;
+  min-width: 200px;
   width: 33%;
 }
 
@@ -255,6 +280,7 @@ footer h5 {
 
 /* also adding for vid:  */
 .main{
+  margin-top: 82px;
   position:relative;
   display:block;
 }
@@ -275,7 +301,7 @@ video{
   height:100px;
 }
 .contact .bottomtext, .about .bottomtext{
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 .h2x{
@@ -284,143 +310,195 @@ video{
   opacity:0;
 }
 
-#hp01{
-  left: 18px;
-  top: 9px;
-  width:407px;
-  height:auto;
+/* iw divs wrap scaling images */
+#iw01{
+  left: 16px;
+  top: 8px;
+  width:411px;
+  /* width:407px; */
 }
-#hp02{
+#iw02{
   left: 438px;
   top: 15px;
   width: 292px;
 }
-#hp03{
+#iw03{
   left: 746px;
   top: 18px;
   width: 252px;
 }
-#hp04{
+#iw04{
   left: 19px;
   top: 502px;
   width: 407px;
 }
-#hp05{
+#iw05{
   left: 441px;
   top: 394px;
   width: 557px;
 }
-#hp07{
+#iw07{
   width: 407px;
   left: 18px;
   top: 1051px;
 }
-#hp08{
+#iw08{
   width: 363px;
   top: 1124px;
   left: 440px;
 }
-#hp09{
-  width: 192px;
+#iw09{
+  /* width: 192px;
   left: 832px;
-  top: 1318px;
+  top: 1318px; */
+  width: 206xpx;
+  left: 811px;
+  top: 1317px;
 }
-#hp10{
-  width: 455px;
+#iw10{
+  width: 459px;
   left: 35px;
   top: 1627px;
 }
-#hp11{
+#iw11{
   width: 477px;
   top: 1599px;
   left: 512px;
 }
 #hp12{
   /* paragraph */
-  top: 2185px;
+
+  top: 2194px;
   width: 100%;
-  font-size: 30px;
-  line-height: 1.2;
-  letter-spacing: .08em;
+  font-size: 32px;
+  line-height: 1.18;
+  letter-spacing: 1.09px;
+  letter-spacing: .035em;  
+  color:white;
+
+}
+#hp12textimg{
+  width: 666px;
+  height: 147px;
+  left: 183px;
+  top: 39px;
+  pointer-events: none;
+  opacity:1;
+}
+#hp12 p{
+  margin-top: 17px;
+  margin-bottom: 21px;
+}
+#hp12 hr{
+  width:972px;
+  max-width: 90vw;
 }
 #hp12 span{
   font-style: italic;
+  font-size:32.5px;
 }
-#hp13{
-  width: 364px;
-  top: 2407px;
-  left: 81px;
+
+#iw13{
+  width: 391px;
+  left: 68px;
+  top: 2433px;
 }
-#hp14{
+#iw14{
   width: 498px;
   left: 500px;
-  top: 2388px;
+  top: 2433px;
 }
-#hp15{
+#iw15{
   width: 443px;
   left: 42px;
-  top: 3057px;
+  top: 3102px;
 }
-#hp16{
+#iw16{
   width: 474px;
-  top: 3043px;
   left: 512px;
+  top: 3088px;
 }
-#hp17{
+#iw17{
   width: 1074px;
-  top: 3605px;
-  left: -9px;
+  top: 3650px;
+  left: -15px;
 }
-#hp18{
+#iw18{
   width: 405px;
-  top: 3977px;
+  top: 4019px;
   left: 61px;
 }
-#hp19{
+#iw19{
   width: 469px;
-  top: 4014px;
+  top: 4059px;
   left: 526px;
 }
-#hp20{
-  width: 325px;
-  top: 4318px;
-  left: 9px;
+#iw20{
+  width: 222px;
+  /* height: 32px; */
+  top: 4425px;
+  left: 233px;
 }
-#hp21{
+#iw21{
   width: 474px;
-  top: 4407px;
+  top: 4329px;
   left: 26px;
 }
-#hp22{
+#redenvmobile{
+  display:none;
+}
+#iw22{
   width: 180px;
-  top: 4809px;
+  top: 4743px;
   left: 26px;
 }
-#hp23{
+#iw23{
   width: 360px;
-  top: 4809px;
+  top: 4743px;
   left: 238px;
 }
-#hp24{
+#iw24{
   width: 367px;
-  top: 4809px;
+  top: 4744px;
   left: 631px
 }
 #hp24alt{
   display:none;
 }
-#hp25{
+#iw25{
   width: 463px;
-  top: 4982px;
-  left: 569px;
+  top: 4933px;
+  left: 568px;
 }
 
-#layout{
-  opacity:.22;
-  top: -85px;
-  position: absolute;
-  left: 0px;
+.growing{
+  transform: scale(1.03);
+  /* transition: .4s; */
 }
+.imgwrap{
+  overflow:hidden;
+  position:absolute;
+  /* border:3px dashed red; */
+  min-height:500px;
+}
+.imgwrap img{
+  position:relative;
+  width:100%;
+  height:auto;
+  /* transition: .4s; */
+}
+  
+picture{
+  display: block;
+  transform: scale (1);
+  transition: .48s;
+}
+
+
+
+
+
+
 
 
 
@@ -459,7 +537,18 @@ video{
   }
 }
 @media (max-width:1020px) {
+  .imgwrap{
+    position:relative;
+    left:unset !important;
+    top: unset !important;
+    max-width: 90vw;
 
+    /* border:3px dashed red; */
+    /* min-height:500px !important; */
+    margin:5px;
+    display:inline-block;
+    min-height: auto;
+  }
   .h2x {
     position: relative;
     left: unset !important;
@@ -467,6 +556,14 @@ video{
     max-width: 93vw;
     height: auto;
     margin:5px;
+  }
+  /* hide red envelope text */
+  #iw20, #iw21{
+    display:none;
+  }
+  #redenvmobile{
+    display:inline-block;
+    max-width: 474px;
   }
   /* hide kqed standalone */
   #hp24, #hp25{
@@ -477,7 +574,9 @@ video{
     max-width: 80vw;
     padding: 0 10vw;
   }
-
+  img#hp09 {
+    max-width: 240px;
+  }
   .vidwrap{
     display:none;
   }
@@ -486,18 +585,41 @@ video{
     top:unset;
     margin-top:60px;
   }
-  #hp12 {
-    font-size: 20px;
-  }
   footer{
     height: 200px;
   }
   .bottomtext {
     margin-top: 120px;
   }
+  #hp12textimg {
+    display: none;
+  }
+  #hp12{
+    font-size: 20px;
+    display: inline;
+    color: var(--textgray);
+  }
+
+  #hp12 span {
+    font-size: inherit;
+  }
+  #iw17{
+    width:100%;
+  }
 }
 
 @media (max-width:767px) {
+  #hp12{
+    color:#8F8E90;
+  }
+  #hp12 br {
+      display: none;
+  }
+
+  #hp12 img{
+    opacity:0;
+    display:none;
+  }
   .brands ul {
     grid-template-columns: 1fr;
   }
@@ -525,6 +647,7 @@ video{
     display: block;
     padding: 40px 0 0 0;
     margin: 0 auto;
+    left: 0;
   }
 
   .contact .bigimg{
@@ -532,27 +655,20 @@ video{
     position:relative;
   }
 
-
-  #logo{
-    width: 100px;
-    padding: 35px 24px;
-  }
-  .hamburger{
-    right:12px;
-    top:20px;
-    width: 34px;
-  }
   .navmenu{
     width:190px;
     right: 23px;
-    top: 17px;
+    top: 15px;
   }
   .closex {
-    top: 4px;
+    top: 7px;
     left: 1px;
   }
   .navmenu li {
     transform: translate(6px,0);
+  }
+  #hp12 p{
+    padding: 0 15%;
   }
   
 }

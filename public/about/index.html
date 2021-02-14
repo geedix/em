@@ -79,12 +79,12 @@
         <header>
     <div id="topbar">
         <div class="topnav">
-            <a href="/"> <img src="../images/emdash_logo.svg" alt="emdash" id='logo'></a>
+            <div class="nbigimg">
+            <a href="/"> <img src="../images/emdash_lockup0212.svg" alt="emdash" id='logo'></a>
             <ul class="navmenu">
                 <li id="home"><a href="/">home</a></li>
                 <li id="about"><a href="/about/">about</a></li>
                 <li id="contact"><a href="/contact/">contact</a></li>
-                
             </ul>
     
             <div class="hamburger" onclick="toggleburger();">
@@ -96,6 +96,7 @@
                 </div>
             </div>
         </div>
+    </div>
   </header>
   <script>
     let burgOpen= true;
@@ -104,7 +105,7 @@
             burgOpen=false;
             gsap.to(".openlines", {opacity:0, duration: .22});
             gsap.to(".closex", {opacity:1, duration: .22});
-            gsap.to(".navmenu", {opacity:1, right:84, duration:.22});
+            gsap.to(".navmenu", {opacity:1, right:74, duration:.22});
         }
         else{
             burgOpen=true;
@@ -123,7 +124,7 @@
     if (CurrentUrl.indexOf("/about") > -1) {
         // aboutbtn.style.textDecoration = 'underline';
         aboutbtn.firstElementChild.style.color = '#979797';
-        gsap.set(".navmenu", {opacity:1, right:84});
+        gsap.set(".navmenu", {opacity:1, right:74});
         gsap.set(".openlines", {opacity:0});
         gsap.set(".closex", {opacity:1});
         burgOpen=false;
@@ -134,7 +135,7 @@
         // contactbtn.style.textDecoration = 'underline';
         contactbtn.firstElementChild.style.color = '#979797';
         // toggleburger();
-        gsap.set(".navmenu", {opacity:1, right:84});
+        gsap.set(".navmenu", {opacity:1, right:74});
         gsap.set(".openlines", {opacity:0});
         gsap.set(".closex", {opacity:1});
         burgOpen=false;
@@ -152,14 +153,12 @@
     <!-- <h5>thanks for stopping by.</h5> -->
     <div class="footbox">
         <div class="thanks">
-            <img src="../images/thanks_omg.svg" alt="" srcset="">
+            <img src="../images/footerthanks2o.svg" alt="" srcset="">
         </div>
         
     </div>
     <div class="bottomtext">
-        <p>COPYRIGHT 2021</p>
-        <p>more information here about the site etc</p>
-    </div>
+        <p><span>&copy;</span> EM DASH 2021</p>
 </footer>
     </div>
 
