@@ -31,9 +31,11 @@ body {
   max-width: var(--maxwidth);
   margin: 0 auto;
 }
-.contact p span {
+
+.contact .main p span{
   font-size: 12px;
 }
+
 p.glen {
   font-size: 14px;
   padding-top: 1em;
@@ -154,7 +156,7 @@ a:hover {
 }
 .aboutText {
   position: absolute;
-  width: 43%;
+  width: 55%;
   height: 100%;
   top: 0;
   left: 38%;
@@ -177,6 +179,7 @@ a:hover {
   height: auto;
   display: block;
   padding: 6%;
+  /* opacity:.8; */
 }
 
 .brands {
@@ -208,8 +211,7 @@ footer {
   background-color: var(--darkblue);
   color: #fff;
   width: 100%;
-  height: 300px;
-
+  height: 312px;
   text-align: center;
   align-items: center;
   display: flex;
@@ -296,7 +298,7 @@ video {
 }
 .contact footer,
 .about footer {
-  height: 100px;
+  height: 250px;
 }
 .contact .bottomtext,
 .about .bottomtext {
@@ -492,6 +494,65 @@ picture {
   transition: 0.48s;
 }
 
+.brands li{
+  opacity:0;
+}
+.aboutText{
+  opacity:0;
+}
+/* footer img{
+  height:auto;
+} */
+#f_emdash{
+  width:78px;
+  height:11px;
+}
+#f_copy{
+  width:98px;
+  height:7px;
+}
+#f_full{
+  width:261px;
+  height:8px;
+}
+#f_icon{
+  width:16px;
+  height:16px;
+}
+.bottom_forsubs {
+  /* border: 1px solid lime; */
+  width:90%;
+  max-width:var(--maxwidth);
+  position: absolute;
+  bottom: 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .bottom_forsubs, .contact .bottom_forsubs{
+  display:inline-flex;
+}
+
+.home .bottom_forsubs{
+  display: none;
+}
+
+.about .bottomtext, .contact .bottomtext{
+  display: none;
+}
+
+.home .bottomtext{
+  display: inline-flex;
+}
+
+
+
+
+
+
+
+
 /* ----------   media queries   ----------     */
 
 @media (max-width: 1208px) {
@@ -499,7 +560,7 @@ picture {
     grid-template-columns: 45% 55%;
   }
   .aboutText {
-    width: 52%;
+    /* width: 52%; */
     left: 34%;
   }
 }
@@ -575,11 +636,15 @@ picture {
     margin-top: 60px;
   }
   footer {
-    height: 200px;
+    height: 260px;
   }
   .bottomtext {
-    margin-top: 120px;
+    margin-top: 220px;
   }
+  .footbox {
+    position: relative;
+    top: 15px;
+}
   #hp12textimg {
     display: none;
   }
@@ -594,6 +659,10 @@ picture {
   }
   #iw17 {
     width: 100%;
+  }
+
+  .aboutText br {
+    display: none;
   }
 }
 
@@ -691,6 +760,15 @@ picture {
     /* transform: translate(38px, 0px); */
     color:inherit;
   }
+  .about .bottom_forsubs, .contact .bottom_forsubs{
+    display: none;
+  }
+  
+  .about .bottomtext, .contact .bottomtext{
+    display:inline-flex;
+  }
+  
+  
 }
 
 

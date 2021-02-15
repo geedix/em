@@ -5,15 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
     <title>em dash - about</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../emstyle2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-
-
 
 
 </head>
@@ -33,16 +29,15 @@
                     <img src="../images/frank_01_2x.jpg" alt="Frank" id="frank">
                 </picture>
                 <div class="aboutText">
-
-
                     <p>
-                        Frank has spent over two decades working with top iconic brands to deliver engaging, dynamic and
-                        beautiful brand experiences. He has partnered with teams and leaders to bring multi-channel
-                        creative
-                        strategies to life through strong leadership, thoughtful vision, and effective team management.
-                        He has
-                        consistently provided innovative design solutions and lasting measurable growth for
-                        his&nbsp;clients.
+                        Frank has spent over two decades working with top <br>
+                        iconic brands to deliver engaging, dynamic and beautiful <br>
+                        brand experiences. He has partnered with teams and <br>
+                        leaders to bring multi-channel creative strategies to life<br>
+                        through strong leadership, thoughtful vision, and <br>
+                        effective team management. He has consistently<br>
+                        provided innovative design solutions and lasting<br>
+                        measurable growth for his&nbsp;clients.
                     </p>
                 </div>
 
@@ -189,13 +184,31 @@
         <div class="thanks">
             <img src="../images/footerthanks2o.svg" alt="" srcset="">
         </div>
-        
     </div>
     <div class="bottomtext">
         <p><span>&copy;</span> EM DASH 2021</p>
+    </div>
+    <div class="bottom_forsubs">
+        <img src="../images/footer_emdash2x.png" alt="em dash" id="f_emdash" srcset="">
+        <img src="../images/copy_footer.png" alt="copyright 2021" id="f_copy" srcset="">
+        <img src="../images/fullportfolio_footer.png" alt="portfolio available on request" id="f_full" srcset="">
+        <img src="../images/justdots.png" alt="icon" id="f_icon" srcset="">
+
+
+
+        
+        
+        
+        
+    </div>
 </footer>
     </div>
-
+<script>
+    // gsap.to("#frank", {  opacity:1, duration:1});
+    gsap.set(".brands li", {  y:10});
+    gsap.to(".aboutText", {  opacity:1, delay:.1, duration:1.1});
+    gsap.to(".brands li", { y:0, opacity:1,  ease: "power3.out", stagger: 0.05, duration:.7, delay:.5});
+</script>
 </body>
 
 </html>
