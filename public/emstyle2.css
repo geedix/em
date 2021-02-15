@@ -109,13 +109,17 @@ img {
   display: inline-flex;
   position: absolute;
   top: 14px;
-  right: 30px;
   list-style: none;
   height: 20px;
-  width: 240px;
   font-size: 14px;
-  justify-content: space-around;
+  width:288px;
+  /* border:1px dotted skyblue; */
+  justify-content: space-evenly;
   opacity: 0;
+}
+.navmenu li {
+  /* position for wide screen  */
+  /* transform: translate(-24px, 0); */
 }
 
 a {
@@ -193,10 +197,6 @@ a:hover {
   position: relative;
 }
 
-.navmenu li {
-  /* position for wide screen  */
-  transform: translate(-24px, 0);
-}
 .wrapper {
   display: flex;
   min-height: 100vh;
@@ -668,7 +668,9 @@ picture {
     display: block;
     position: relative;
   }
-
+  .hamburger {
+    right: 20px;
+  }
   .closex {
     top: 7px;
     left: 1px;
@@ -677,21 +679,42 @@ picture {
   #hp12 p {
     padding: 0 18%;
   }
+
   .navmenu {
-    /* width:190px;*/
-    right: 23px;
-    /* top: 48px; */
-    width: 70%;
-    top: 49px;
-    width: 100%;
-    left: 0;
-    padding-left: 0;
-    display: flex;
-    justify-content: space-evenly;
+    /* we are in the <767px zone  */
+    /* right: 23px; */
+    width: 260px;
   }
   .navmenu li {
      /* for < 767 wide  */
-     transform: translate(6px, 0);
+     /* transform: translate(6px, 0); */
     /* transform: translate(38px, 0px); */
+    color:inherit;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width:576px) {
+  .navmenu {
+    /* right: 23px;     */
+    width: 240px;
+  }
+  #logo {
+    width: 110px;
+    height: auto;
+    top: 2px;
+  }
+}
+
+
+@media (max-width:418px) {
+  .navmenu {
+    top: 36px;
   }
 }

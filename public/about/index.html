@@ -82,7 +82,7 @@
             <div class="nbigimg">
             <a href="/"> <img src="../images/emdash_lockup0212.svg" alt="emdash" id='logo'></a>
             <ul class="navmenu">
-                <li id="home"><a href="/">home</a></li>
+                <li id="home" onclick='goHome()'><a href="#">home</a></li>
                 <li id="about"><a href="/about/">about</a></li>
                 <li id="contact"><a href="/contact/">contact</a></li>
             </ul>
@@ -100,23 +100,36 @@
   </header>
   <script>
     let burgOpen= true;
+    var menuTarg;
+
+    function goHome(){
+        gsap.to(".navmenu", {opacity:0, right:0, ease: "power3.in",delay:.2, duration: .3, onComplete:getHome});
+    }
+    function getHome(){
+        window.location.href = '/';
+    }
+    function findTarg(){
+        if(window.innerWidth>767){
+            menuTarg=74;
+        }
+        else if (window.innerWidth>418){
+            menuTarg=50;
+        }
+        else{
+            menuTarg=44;
+        }
+    }
+    findTarg();
     function toggleburger(){
-        // var winWidth, navTop;
-        // if(window.innerWidth>767){
-        //     openHeight=78;
-        //     navTop=14;
-        // }
-        // else{
-        //     openHeight=98;
-        //     navTop=50;
-        // }
+         
+        findTarg();
 
         if(burgOpen){
             // close menu 
             burgOpen=false;
-            gsap.to(".openlines", {opacity:0, duration: .22});
-            gsap.to(".closex", {opacity:1, duration: .22});
-            gsap.to(".navmenu", {opacity:1, right:74,  duration:.22});
+            gsap.to(".openlines", {opacity:0, duration: .24});
+            gsap.to(".closex", {opacity:1, duration: .24});
+            gsap.to(".navmenu", {opacity:1, right:menuTarg,  duration:.24});
             // gsap.to("#topbar", {height:openHeight, duration:.32});
 
         }
@@ -125,7 +138,7 @@
             burgOpen=true;
             gsap.to(".openlines", {opacity:1, duration: .22});
             gsap.to(".closex", {opacity:0, duration:.22});
-            gsap.to(".navmenu", {opacity:0, right:0, duration: .22});
+            gsap.to(".navmenu", {opacity:0, right:-100, duration: .24});
             // gsap.to("#topbar", {height:78, duration:.22});
         }
     }
@@ -142,7 +155,7 @@
     if (CurrentUrl.indexOf("/about") > -1) {
         // aboutbtn.style.textDecoration = 'underline';
         aboutbtn.firstElementChild.style.color = '#979797';
-        gsap.set(".navmenu", {opacity:1, right:74});
+        gsap.set(".navmenu", {opacity:1, right:menuTarg});
         gsap.set(".openlines", {opacity:0});
         gsap.set(".closex", {opacity:1});
         burgOpen=false;
@@ -153,7 +166,7 @@
         // contactbtn.style.textDecoration = 'underline';
         contactbtn.firstElementChild.style.color = '#979797';
         // toggleburger();
-        gsap.set(".navmenu", {opacity:1, right:74});
+        gsap.set(".navmenu", {opacity:1, right:menuTarg});
         gsap.set(".openlines", {opacity:0});
         gsap.set(".closex", {opacity:1});
         burgOpen=false;
@@ -161,7 +174,10 @@
     else{
         // homebtn.style.textDecoration = 'underline';
         homebtn.firstElementChild.style.color = '#979797';
+        gsap.set(".navmenu", {right:-210, opacity:0});
     }
+    
+    
 
 </script>
         <footer>
