@@ -101,17 +101,32 @@
   <script>
     let burgOpen= true;
     function toggleburger(){
+        // var winWidth, navTop;
+        // if(window.innerWidth>767){
+        //     openHeight=78;
+        //     navTop=14;
+        // }
+        // else{
+        //     openHeight=98;
+        //     navTop=50;
+        // }
+
         if(burgOpen){
+            // close menu 
             burgOpen=false;
             gsap.to(".openlines", {opacity:0, duration: .22});
             gsap.to(".closex", {opacity:1, duration: .22});
-            gsap.to(".navmenu", {opacity:1, right:74, duration:.22});
+            gsap.to(".navmenu", {opacity:1, right:74,  duration:.22});
+            // gsap.to("#topbar", {height:openHeight, duration:.32});
+
         }
         else{
+            // open menu 
             burgOpen=true;
             gsap.to(".openlines", {opacity:1, duration: .22});
             gsap.to(".closex", {opacity:0, duration:.22});
-            gsap.to(".navmenu", {opacity:0, right:30, duration: .22});
+            gsap.to(".navmenu", {opacity:0, right:0, duration: .22});
+            // gsap.to("#topbar", {height:78, duration:.22});
         }
     }
 
@@ -120,6 +135,9 @@
     let contactbtn = document.getElementById('contact');
     
     const CurrentUrl = window.location.href.toString();
+
+    // not leaving navmenu open to start home page. Only sub pages now.
+    //  gsap.set(".navmenu", {opacity:1, right:74});
 
     if (CurrentUrl.indexOf("/about") > -1) {
         // aboutbtn.style.textDecoration = 'underline';
