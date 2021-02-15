@@ -166,7 +166,8 @@ a:hover {
   max-width: 317px;
   height: auto;
   display: block;
-  padding: 26px 10% 0 0;
+  padding: 26px 10% 26px 0;
+
   position: relative;
   left: 100px;
 }

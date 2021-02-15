@@ -25,7 +25,9 @@
     var menuTarg;
 
     function goHome(){
+        gsap.to(".main", {opacity:0, duration: .5});
         gsap.to(".navmenu", {opacity:0, right:0, ease: "power3.in", delay:.2, duration: .35, onComplete:getHome});
+        
     }
     function getHome(){
         window.location.href = '/';
@@ -60,7 +62,7 @@
             burgOpen=true;
             gsap.to(".openlines", {opacity:1, duration: .22});
             gsap.to(".closex", {opacity:0, duration:.22});
-            gsap.to(".navmenu", {opacity:0, right:-100, ease:"power3.in", duration: .3});
+            gsap.to(".navmenu", {opacity:0, right:0, ease:"power3.in", duration: .3});
             // gsap.to("#topbar", {height:78, duration:.22});
         }
     }
@@ -96,7 +98,7 @@
     else{
         // homebtn.style.textDecoration = 'underline';
         homebtn.firstElementChild.style.color = '#979797';
-        gsap.set(".navmenu", {right:-100, opacity:0});
+        gsap.set(".navmenu", {right:0, opacity:0});
     }
     
     
