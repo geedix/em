@@ -45,9 +45,9 @@
     <div id="topbar">
         <div class="topnav">
             <div class="nbigimg">
-            <a href="/"> <img src="../images/emdash_lockup0212.svg" alt="emdash" id='logo'></a>
+            <a href="#/" onclick='goHome()'> <img src="../images/emdash_lockup0212.svg" alt="emdash" id='logo'></a>
             <ul class="navmenu">
-                <li id="home" onclick='goHome()'><a href="#">home</a></li>
+                <li id="home" onclick='goHome()'><a href="#/">home</a></li>
                 <li id="about"><a href="/about/">about</a></li>
                 <li id="contact"><a href="/contact/">contact</a></li>
             </ul>
@@ -68,9 +68,15 @@
     var menuTarg;
 
     function goHome(){
-        gsap.to(".main", {opacity:0, duration: .5});
-        gsap.to(".navmenu", {opacity:0, right:0, ease: "power3.in", delay:.2, duration: .35, onComplete:getHome});
-        
+            if (document.body.classList.contains('home')) {
+                //do nothing
+                return false;
+            }
+            else{
+    
+            gsap.to(".main", {opacity:0, duration: .5});
+            gsap.to(".navmenu", {opacity:0, right:0, ease: "power3.in", delay:.2, duration: .35, onComplete:getHome});
+        }
     }
     function getHome(){
         window.location.href = '/';
@@ -160,19 +166,13 @@
     <div class="bottomtext">
         <p><span>&copy;</span> EM DASH 2021</p>
     </div>
-    <div class="bottom_forsubs">
+    <!-- <div class="bottom_forsubs">
         <img src="../images/footer_emdash2x.png" alt="em dash" id="f_emdash" srcset="">
         <img src="../images/copy_footer.png" alt="copyright 2021" id="f_copy" srcset="">
         <img src="../images/fullportfolio_footer.png" alt="portfolio available on request" id="f_full" srcset="">
         <img src="../images/justdots.png" alt="icon" id="f_icon" srcset="">
-
-
-
         
-        
-        
-        
-    </div>
+    </div> -->
 </footer>
 </div>
 </body>
