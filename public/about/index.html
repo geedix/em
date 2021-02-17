@@ -33,10 +33,16 @@
                         iconic brands to deliver engaging, dynamic and beautiful <br>
                         brand experiences. He has partnered with teams and <br>
                         leaders to bring multi-channel creative strategies to life<br>
-                        through strong leadership, thoughtful vision, and <br>
-                        effective team management. He has consistently<br>
+                        through strong leadership, thoughtful vision and <br>
+                        effective team management. He consistently works to <br>
+                        provide innovative design solutions and lasting measurable <br>growth for his&nbsp;clients.
+
+                        
+
+
+                        <!-- He has consistently<br>
                         provided innovative design solutions and lasting<br>
-                        measurable growth for his&nbsp;clients.
+                        measurable growth for his&nbsp;clients. -->
                     </p>
                 </div>
 
@@ -74,21 +80,21 @@
     <div id="topbar">
         <div class="topnav">
             <div class="nbigimg">
-            <a href="#/" onclick='goHome()'> <img src="../images/emdash_lockup0212.svg" alt="emdash" id='logo'></a>
-            <ul class="navmenu">
-                <li id="home" onclick='goHome()'><a href="#/">home</a></li>
-                <li id="about"><a href="/about/">about</a></li>
-                <li id="contact"><a href="/contact/">contact</a></li>
-            </ul>
-    
-            <div class="hamburger" onclick="toggleburger();">
-                <div class="openlines">
-                        <img src="../images/hamburger.svg" alt="burger">
+            
+                <ul class="navmenu">
+                    <li id="home" onclick='goHome()'><a href="#/">home</a></li>
+                    <li id="about"><a href="/about/">about</a></li>
+                    <li id="contact"><a href="/contact/">contact</a></li>
+                </ul>
+                <a href="#/" onclick='goHome()'> <img src="../images/emdash_lockup0212.svg" alt="emdash" id='logo'></a>
+                <div class="hamburger" onclick="toggleburger();">
+                    <div class="openlines">
+                            <img src="../images/hamburger.svg" alt="burger">
+                    </div>
+                    <div class="closex">
+                        <img src="../images/close.svg" alt="close">
+                    </div>
                 </div>
-                <div class="closex">
-                    <img src="../images/close.svg" alt="close">
-                </div>
-            </div>
         </div>
     </div>
   </header>
@@ -97,12 +103,10 @@
     var menuTarg;
 
     function goHome(){
-            if (document.body.classList.contains('home')) {
-                //do nothing
-                return false;
-            }
-            else{
-    
+        if (document.body.classList.contains('home')) {
+            return false;
+        }
+        else{
             gsap.to(".main", {opacity:0, duration: .5});
             gsap.to(".navmenu", {opacity:0, right:0, ease: "power3.in", delay:.2, duration: .35, onComplete:getHome});
         }
