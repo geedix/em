@@ -95,8 +95,6 @@ img {
 }
 .openlines {
   position: absolute;
-  /* width: 60%; */
-  /* height: auto; */
   top: 12px;
   left: 8px;
 }
@@ -114,8 +112,7 @@ img {
   list-style: none;
   height: 20px;
   font-size: 14px;
-  width:288px;
-  /* border:1px dotted skyblue; */
+  width:340px;
   justify-content: space-evenly;
   opacity: 0;
 }
@@ -125,7 +122,6 @@ a {
   color: var(--textgray);
 }
 a:hover {
-  /* text-decoration: underline; */
   color: var(--palergray);
 }
 .wrap {
@@ -262,8 +258,6 @@ footer h5 {
 }
 
 .vidwrap {
-  /* width: 697px;
-  max-width: 655px; */
   display: block;
   width: 557px;
   height: 306px !important;
@@ -280,6 +274,13 @@ footer h5 {
   position: relative;
   display: block;
 }
+#topper{
+  opacity:0;
+  transition: .3s all;
+}
+.mainshow#topper{
+  opacity:1;
+}
 
 video {
   width: 560px;
@@ -295,10 +296,6 @@ video {
 .about footer {
   height: 280px;
 }
-/* .contact .bottomtext,
-.about .bottomtext {
-  margin-top: -10px;
-} */
 
 .h2x {
   position: absolute;
@@ -468,7 +465,6 @@ video {
 
 .growing {
   transform: scale(1.03);
-  /* transition: .4s; */
 }
 .imgwrap {
   overflow: hidden;
@@ -480,13 +476,12 @@ video {
   position: relative;
   width: 100%;
   height: auto;
-  /* transition: .4s; */
 }
 
 picture {
   display: block;
   transform: scale (1);
-  transition: 0.48s;
+  /* transition: 0.48s; */
 }
 
 .brands li{
@@ -515,7 +510,6 @@ picture {
   height:16px;
 }
 .bottom_forsubs {
-  /* border: 1px solid lime; */
   width:90%;
   max-width:var(--maxwidth);
   position: absolute;
@@ -533,25 +527,12 @@ picture {
   display: none;
 }
 
-/* .about .bottomtext, .contact .bottomtext{
-  display: none;
-} */
-
 .bottomtext{
   display: inline-flex;
 }
 
-
-
-.darkmode{
-  color:white !important;
-  background-color: var(--textgray) !important;
-}
-.darkmode svg{
-  filter:invert(1);
-}
-.darkmode #logo{
-  filter: brightness(10);
+#contact a, #about a, #home a {
+  padding: .6em .2em !important;
 }
 
 
@@ -757,22 +738,18 @@ picture {
 
   .navmenu {
     /* we are in the <767px zone  */
-    width: 260px;
+    width: 300px;
   }
   .navmenu li {
     color:inherit;
   }
-  /* .about .bottom_forsubs, .contact .bottom_forsubs{
-    display: none;
+
+  /* .navmenu li a {
+    border: 1px solid blue;
+    padding: .6em .2em;
   } */
-  
 
-  
 }
-
-
-
-
 
 
 
@@ -781,6 +758,8 @@ picture {
   .navmenu {
     /* right: 23px;     */
     width: 240px;
+    top:15px;
+    transform: translateX(10px);
   }
   #logo {
     width: 110px;
@@ -791,12 +770,6 @@ picture {
     right: 20px;
   }
 
-  /* .about .bottomtext, .contact .bottomtext{
-    display:inline-flex;
-  } */
-  /* .bottom_forsubs{
-    display:none  !important;
-  } */
 }
 
 

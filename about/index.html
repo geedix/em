@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frank has spent over two decades working with top
+    iconic brands to deliver engaging, dynamic and beautiful
+    brand experiences.">
 
     <title>em dash - about</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../emstyle2.css">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 
 
@@ -18,7 +22,7 @@
 
     <div class="wrapper">
 
-        <div class="main">
+        <div class="main" id="topper">
 
 
             <!--  <h1>ABOUT</h1> -->
@@ -80,10 +84,13 @@
         <sergey-import src="footer" />
     </div>
 <script>
+
+let topper = document.getElementById('topper');
+    topper.classList.add("mainshow");
     // gsap.to("#frank", {  opacity:1, duration:1});
     gsap.set(".brands li", {  y:10});
-    gsap.to(".aboutText", {  opacity:1, delay:.1, duration:1.1});
-    gsap.to(".brands li", { y:0, opacity:1,  ease: "power3.out", stagger: 0.05, duration:.7, delay:.5});
+    gsap.to(".aboutText", {  opacity:1, delay:.35, duration:1.1});
+    gsap.to(".brands li", { y:0, opacity:1,  ease: "power3.out", stagger: 0.07, duration:.7, delay:.7});
 </script>
 </body>
 

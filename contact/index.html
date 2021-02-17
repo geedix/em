@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact Em Dash: email, phone. Glenn Ellen, California">
     <title>em dash - contact</title>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap" rel="stylesheet"  />
     <link rel="stylesheet" href="../emstyle2.css">
+    <link rel="icon" type="image/svg+xml" href="../images/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script> -->
 
@@ -16,7 +19,7 @@
 
     
     <div class="wrapper">
-    <div class="main">
+    <div class="main" id="topper">
         <div class="bigimg">
             <!-- <p>contact</p> -->
             <img src='../images/contact_img_2x.jpg' alt='em dash in type' id="contactimage">
@@ -43,6 +46,12 @@
 
     <sergey-import src="header" />
     <sergey-import src="footer" />
+
+    <script>
+         let topper = document.getElementById('topper');
+        // .mainshow
+        topper.classList.add("mainshow");
+    </script>
 </div>
 </body>
 </html>
