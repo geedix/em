@@ -108,6 +108,7 @@ img {
 .navmenu {
   display: inline-flex;
   position: absolute;
+  left:0;
   top: 14px;
   list-style: none;
   height: 20px;
@@ -559,7 +560,6 @@ picture {
 
 
 
-
 /* ----------   media queries   ----------     */
 
 @media (max-width: 1208px) {
@@ -725,6 +725,8 @@ picture {
   #frank {
     padding-bottom: 20px;
     margin: 0 auto;
+    width: 50%;
+    min-width: 200px;
   }
   .contactText {
     position: relative;
@@ -756,29 +758,20 @@ picture {
   }
 
   .navmenu {
-    /* we are in the <767px zone  */
     width: 300px;
   }
   .navmenu li {
     color:inherit;
   }
 
-  /* .navmenu li a {
-    border: 1px solid blue;
-    padding: .6em .2em;
-  } */
-
 }
-
-
 
 
 @media (max-width:576px) {
   .navmenu {
-    /* right: 23px;     */
     width: 230px;
     top:14px;
-    transform: translateX(10px);
+    /* transform: translateX(10px); */
   }
   #logo {
     width: 110px;
@@ -788,7 +781,6 @@ picture {
   .hamburger {
     right: 20px;
   }
-
 }
 
 
@@ -799,6 +791,7 @@ picture {
   .navmenu {
     width: 142px;
   }
+
   #logo {
     width: 97px;
   }

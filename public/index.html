@@ -64,14 +64,10 @@
                             <img src="img2x/hp05.jpg" id="hp05" alt="image" class="h2x" loading="lazy">
                         </picture>
                     </div>
-                    
-
 
                     <div class="vidwrap h2x">
                         <video class="vid" id="vid1" muted loop src="video/sp18-b5b_c1.mp4"></video>       
                     </div>
-
-
                     
                     <div class="imgwrap" id="iw07">
                         <picture>
@@ -230,7 +226,7 @@
         <div class="topnav">
             <div class="nbigimg">
             
-                <ul class="navmenu">
+                <ul class="navmenu" id="theMenu">
                     <li id="home" onclick='goHome()'><a href="#/">home</a></li>
                     <li id="about"><a href="/about/">about</a></li>
                     <li id="contact"><a href="/contact/">contact</a></li>
@@ -248,53 +244,85 @@
     </div>
   </header>
   <script>
-    let burgOpen= true;
-    var menuTarg;
+    let burgOpen= true,
+        menuTarg,
+        navOffset = 48,
+        winWidth = window.innerWidth,
+        navwidth = document.getElementById('theMenu').clientWidth;
 
-    function goHome(){
-        if (document.body.classList.contains('home')) {
-            return false;
-        }
-        else{
-            gsap.to(".main", {opacity:0, duration: .5});
-            gsap.to(".navmenu", {opacity:0, right:0, ease: "power3.in", delay:.2, duration: .35, onComplete:getHome});
-        }
+////////////////////////   resize debouncer
+let timeoutId = false, // holder for timeout id
+    delay = 250, // delay after event is "complete" to run callback
+    calls = 0;
+    // logText=document.getElementById('logText')
+
+// window.resize callback function
+function getinnerWidth() {
+    // logText.innerHTML = window.innerWidth;
+    // if burger is open, navmenu is closed. otherwise, reposition
+    findTarg();
+    if(!burgOpen){
+        // positionNav();
+        gsap.to(".navmenu", {autoAlpha: 1, x:menuTarg, duration: 0.3});
     }
+}
+// window.resize event listener
+window.addEventListener('resize', function() {
+    clearTimeout(timeoutId);
+  // start timing for event "completion"
+    timeoutId = setTimeout(getinnerWidth, delay);
+});
+
+function goHome(){
+    if (document.body.classList.contains('home')) {
+        return false;
+    }
+    else{        
+        gsap.to(".main", {opacity:0, duration: .5});
+        navwidth = document.getElementById('theMenu').clientWidth;
+        gsap.to(".navmenu", {opacity:0, x:winWidth-navwidth, ease: "power3.in", delay:.2, duration: .35, onComplete:getHome});            
+    }
+}
     function getHome(){
         window.location.href = '/';
     }
     function findTarg(){
-        if(window.innerWidth>767){
-            menuTarg=74;
-        }
-        else if (window.innerWidth>418){
-            menuTarg=50;
-        }
-        else{
-            menuTarg=44;
+
+        winWidth=window.innerWidth;
+        navwidth = document.getElementById('theMenu').clientWidth;
+        navOffset=48;
+        
+        menuTarg= Math.floor(winWidth-(navwidth+navOffset));
+        if(menuTarg>598){
+            menuTarg=598;
         }
     }
     findTarg();
+
+    function positionNav(){
+        navwidth = document.getElementById('theMenu').clientWidth;
+        gsap.fromTo(".navmenu", {autoAlpha: 0, x:menuTarg+60}, {autoAlpha: 1, x:menuTarg, duration: 0.3});
+    }
     function toggleburger(){
          
         findTarg();
 
         if(burgOpen){
-            // close menu 
+            // open menu 
             burgOpen=false;
             gsap.to(".openlines", {opacity:0, duration: .24});
             gsap.to(".closex", {opacity:1, duration: .24});
-            gsap.to(".navmenu", {opacity:1, right:menuTarg, ease:"power3.out",  duration:.3});
-            // gsap.to("#topbar", {height:openHeight, duration:.32});
 
+            positionNav();
         }
         else{
-            // open menu 
+            // close menu 
+            findTarg();
             burgOpen=true;
+            navwidth = document.getElementById('theMenu').clientWidth;
             gsap.to(".openlines", {opacity:1, duration: .22});
             gsap.to(".closex", {opacity:0, duration:.22});
-            gsap.to(".navmenu", {opacity:0, right:0, ease:"power3.in", duration: .3});
-            // gsap.to("#topbar", {height:78, duration:.22});
+            gsap.to(".navmenu", {opacity:0, x:"+=60", ease:"power3.in", duration: .3});
         }
     }
 
@@ -305,23 +333,19 @@
     const CurrentUrl = window.location.href.toString();
 
     // not leaving navmenu open to start home page. Only sub pages now.
-    //  gsap.set(".navmenu", {opacity:1, right:74});
 
     if (CurrentUrl.indexOf("/about") > -1) {
         // aboutbtn.style.textDecoration = 'underline';
         aboutbtn.firstElementChild.style.color = '#979797';
-        gsap.set(".navmenu", {opacity:1, right:menuTarg});
+        gsap.set(".navmenu", {opacity:1, x:menuTarg});
         gsap.set(".openlines", {opacity:0});
         gsap.set(".closex", {opacity:1});
         burgOpen=false;
-
-        // toggleburger();
     }
     else if (CurrentUrl.indexOf("/contact") > -1) {
         // contactbtn.style.textDecoration = 'underline';
         contactbtn.firstElementChild.style.color = '#979797';
-        // toggleburger();
-        gsap.set(".navmenu", {opacity:1, right:menuTarg});
+        gsap.set(".navmenu", {opacity:1, x:menuTarg});
         gsap.set(".openlines", {opacity:0});
         gsap.set(".closex", {opacity:1});
         burgOpen=false;
@@ -329,7 +353,8 @@
     else{
         // homebtn.style.textDecoration = 'underline';
         homebtn.firstElementChild.style.color = '#979797';
-        gsap.set(".navmenu", {right:0, opacity:0});
+        navwidth = document.getElementById('theMenu').clientWidth;
+        gsap.set(".navmenu", {x:winWidth-navwidth, opacity:0});
     }
     
     
