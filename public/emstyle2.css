@@ -348,10 +348,12 @@ video {
   left: 440px;
 }
 #iw09 {
-  width: 206xpx;
-  height: 152px; 
+  width: 206px;
+  /* height: 152px;  */
   left: 811px;
   top: 1317px;
+  height: auto;
+  padding: 6px;
 }
 #iw10 {
   width: 459px;
@@ -586,22 +588,20 @@ picture {
 
 
 
-
-
-
-
 @media (max-width: 1020px) {
   .imgwrap {
     position: relative;
     left: unset !important;
     top: unset !important;
     max-width: 90vw;
+    
 
     /* border:3px dashed red; */
     /* min-height:500px !important; */
     margin: 5px;
     display: inline-block;
     min-height: auto;
+    height:auto;
   }
   .h2x {
     position: relative;
