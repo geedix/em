@@ -308,53 +308,60 @@ video {
   left: 16px;
   top: 8px;
   width: 411px;
-  /* width:407px; */
+  height:484px;
+  
 }
 #iw02 {
   left: 438px;
   top: 15px;
   width: 292px;
+  height: 370px;
 }
 #iw03 {
   left: 746px;
   top: 18px;
   width: 252px;
+  height: 354px;
 }
 #iw04 {
   left: 19px;
   top: 502px;
   width: 407px;
+  height: 541px;
 }
 #iw05 {
   left: 441px;
   top: 394px;
   width: 557px;
+  height: 381px;
 }
 #iw07 {
   width: 407px;
+  height: 525px;
   left: 18px;
   top: 1051px;
 }
 #iw08 {
   width: 363px;
+  height: 447px;
   top: 1124px;
   left: 440px;
 }
 #iw09 {
-  /* width: 192px;
-  left: 832px;
-  top: 1318px; */
   width: 206xpx;
+  height: 152px; 
   left: 811px;
   top: 1317px;
 }
 #iw10 {
   width: 459px;
+  height: 528px;
   left: 35px;
   top: 1627px;
 }
 #iw11 {
   width: 477px;
+  height: 587px;
   top: 1599px;
   left: 512px;
 }
@@ -392,47 +399,55 @@ video {
 
 #iw13 {
   width: 391px;
+  height: 630px;
   left: 68px;
   top: 2433px;
 }
 #iw14 {
   width: 498px;
+  height: 624px;
   left: 500px;
   top: 2433px;
 }
 #iw15 {
   width: 443px;
+  height: 533px;
   left: 42px;
   top: 3102px;
 }
 #iw16 {
   width: 474px;
+  height: 546px;
   left: 512px;
   top: 3088px;
 }
 #iw17 {
   width: 1074px;
+  height: 320px;
   top: 3650px;
   left: -15px;
 }
 #iw18 {
   width: 405px;
+  height: 278px;
   top: 4019px;
   left: 61px;
 }
 #iw19 {
   width: 469px;
+  height: 626px;
   top: 4059px;
   left: 526px;
 }
 #iw20 {
   width: 222px;
-  /* height: 32px; */
+  height: 36px;
   top: 4425px;
   left: 233px;
 }
 #iw21 {
   width: 474px;
+  height: 370px;
   top: 4329px;
   left: 26px;
 }
@@ -441,6 +456,7 @@ video {
 }
 #iw22 {
   width: 180px;
+  height: 229px;
   top: 4743px;
   left: 26px;
 }
@@ -451,7 +467,8 @@ video {
 }
 #iw24 {
   width: 367px;
-  top: 4744px;
+  height: 229px;
+  top: 4743px;
   left: 631px;
 }
 #hp24alt {
@@ -470,7 +487,7 @@ video {
   overflow: hidden;
   position: absolute;
   /* border:3px dashed red; */
-  min-height: 500px;
+  /* min-height: 500px; */
 }
 .imgwrap img {
   position: relative;
