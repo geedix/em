@@ -349,9 +349,10 @@ video {
 }
 #iw09 {
   width: 206xpx;
-  height: 152px; 
+  height: auto; 
   left: 811px;
   top: 1317px;
+  padding: 6px;
 }
 #iw10 {
   width: 459px;
@@ -596,6 +597,7 @@ picture {
     left: unset !important;
     top: unset !important;
     max-width: 90vw;
+    height:auto !important;
 
     /* border:3px dashed red; */
     /* min-height:500px !important; */
@@ -774,8 +776,8 @@ picture {
 @media (max-width:576px) {
   .navmenu {
     /* right: 23px;     */
-    width: 240px;
-    top:15px;
+    width: 230px;
+    top:14px;
     transform: translateX(10px);
   }
   #logo {

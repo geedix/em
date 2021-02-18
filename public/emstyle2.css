@@ -348,11 +348,10 @@ video {
   left: 440px;
 }
 #iw09 {
-  width: 206px;
-  /* height: 152px;  */
+  width: 206xpx;
+  height: auto; 
   left: 811px;
   top: 1317px;
-  height: auto;
   padding: 6px;
 }
 #iw10 {
@@ -588,20 +587,23 @@ picture {
 
 
 
+
+
+
+
 @media (max-width: 1020px) {
   .imgwrap {
     position: relative;
     left: unset !important;
     top: unset !important;
     max-width: 90vw;
-    
+    height:auto !important;
 
     /* border:3px dashed red; */
     /* min-height:500px !important; */
     margin: 5px;
     display: inline-block;
     min-height: auto;
-    height:auto;
   }
   .h2x {
     position: relative;
@@ -774,8 +776,8 @@ picture {
 @media (max-width:576px) {
   .navmenu {
     /* right: 23px;     */
-    width: 240px;
-    top:15px;
+    width: 230px;
+    top:14px;
     transform: translateX(10px);
   }
   #logo {
