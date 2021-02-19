@@ -1,0 +1,6 @@
+# www.emdash.com
+
+User-agent: *
+Disallow: /video
+Disallow: /cgi-bin
+Disallow: site.webmanifest
