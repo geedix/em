@@ -1,0 +1,19 @@
+/* TEAM */
+
+Design: Frank at EmDash
+Development: J Bradley Johnson
+
+Site: https://jbradleyjohnson.net/
+
+Twitter: https://twitter.com/geedix
+
+                            
+Location: Ballston Spa, NY
+
+                            
+/* SITE */
+
+                            
+Last update: 2021/02/19
+
+Sergey, gsap
